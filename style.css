@@ -50,6 +50,7 @@ body {
 .container button img {
   width: 30px;
   cursor: pointer;
+  margin-right: 10px;
 }
 #first-img {
   margin-left: auto;
@@ -68,4 +69,26 @@ body {
   border-radius: 5px;
   cursor: pointer;
   align-items: center;
+  
+}
+/* Media Query 1: Adjust margin for screens with a width of 800 pixels or smaller */
+@media only screen and (max-width: 800px) {
+  body {
+    margin-right: 80px;
+  }
+}
+
+/* Media Query 2: Adjust styles for screens with a width between 400 and 600 pixels */
+@media only screen and (min-width: 400px) and (max-width: 630px) {
+  .display img {
+    width: 30px;
+  }
+
+  input {
+    width: 50%;
+  }
+
+  img {
+    margin-right: 10px;
+  }
 }
